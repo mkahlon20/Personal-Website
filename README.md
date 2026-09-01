@@ -99,3 +99,8 @@ Unfortunately, one logistical issue with a template theme like Academic Pages th
 [![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
 [![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
 </div>
+
+# How to run the app once setup is finished
+
+`$env:Path = "C:\Ruby32-x64\bin;$env:Path"
+>>   bundle exec jekyll serve --livereload -H localhost`

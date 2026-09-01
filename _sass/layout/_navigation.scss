@@ -174,7 +174,8 @@
 
 .greedy-nav {
   position: relative;
-  min-width: 250px;
+  flex: 1 1 auto;
+  min-width: 0;
   background: var(--global-bg-color);
 
   a {
@@ -204,19 +205,12 @@
 
   .visible-links {
     display: table;
+    width: max-content;
+    margin-left: auto;
 
     li {
       display: table-cell;
       vertical-align: middle;
-
-      &:first-child {
-        font-weight: bold;
-        text-wrap: wrap;
-
-        a {
-          margin-left: 0;
-        }
-      }
 
       &:last-child {
         a {
