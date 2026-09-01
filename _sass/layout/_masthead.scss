@@ -45,6 +45,25 @@
 }
 
 .masthead__menu {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 48em) {
+    flex-wrap: wrap;
+
+    > .masthead__menu-item--lg,
+    > .greedy-nav {
+      flex-basis: 100%;
+    }
+
+    > .masthead__menu-item--lg {
+      padding-right: 0;
+    }
+
+    > .greedy-nav .visible-links {
+      margin-left: 0;
+    }
+  }
 
   ul {
     margin: 0;
@@ -61,8 +80,16 @@
   white-space: nowrap;
 
   &--lg {
+    flex: 0 1 auto;
     padding-right: 2em;
     font-weight: 700;
+    white-space: normal;
+
+    a {
+      display: block;
+      padding: 0.5rem 0;
+      color: var(--global-masthead-link-color);
+    }
   }
 }
 
